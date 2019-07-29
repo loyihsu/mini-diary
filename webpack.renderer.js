@@ -27,5 +27,8 @@ module.exports = (env, argv) =>
 				title: pkg.productName,
 			}),
 		],
+		externals: {
+			electronSpellchecker: 'require("electron-spellchecker")',
+		},
 		target: "electron-renderer",
 	});

@@ -1,5 +1,4 @@
 import { app, BrowserWindow } from "electron";
-import contextMenu from "electron-context-menu";
 import electronDebug from "electron-debug";
 import path from "path";
 
@@ -12,7 +11,6 @@ import { getWindow, setWindow } from "./window";
 
 initReportDialog();
 electronDebug();
-contextMenu();
 
 async function createWindow(): Promise<BrowserWindow> {
 	const win = new BrowserWindow({

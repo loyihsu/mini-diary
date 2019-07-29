@@ -6,12 +6,14 @@ import initReportDialog from "../shared/reportDialog";
 import "./assets/styles/styles.scss";
 import AppContainer from "./components/AppContainer";
 import initIpcListeners from "./electron/ipcRenderer/listeners";
+import { initSpellChecker } from "./electron/spellChecker";
 import store from "./store/store";
 import { initI18n } from "./utils/i18n";
 
 initReportDialog();
 initIpcListeners();
 initI18n();
+initSpellChecker();
 
 // Create 'root' div
 const root = document.createElement("div");
